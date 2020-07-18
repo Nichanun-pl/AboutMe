@@ -16,8 +16,10 @@
             android:id="@+id/name_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nichanun"
-            android:textAppearance="@android:color/black" />
+            android:text="@string/name"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
