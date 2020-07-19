@@ -35,10 +35,14 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/bio_text"
+                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:lineSpacingMultiplier="1.2"
+                android:paddingStart="@dimen/layout_padding"
+                android:paddingEnd="@dimen/layout_padding"
+                android:text="@string/bio" />
         </ScrollView>
 
     </LinearLayout>
