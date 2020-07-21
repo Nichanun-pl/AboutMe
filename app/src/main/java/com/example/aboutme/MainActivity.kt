@@ -8,13 +8,15 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-
+import com.example.android.aboutme.databinding.ActivityMainBinding
+import androidx.databinding.DataBindingUtil
 
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         setContentView(R.layout.activity_main)
 
         findViewById<Button>(R.id.done_button).setOnClickListener {
