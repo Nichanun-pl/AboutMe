@@ -9,8 +9,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import com.example.android.aboutme.databinding.ActivityMainBinding
-import androidx.databinding.DataBindingUtil
+import com.example.aboutme.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
@@ -38,12 +37,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.nicknameText.text = binding.nicknameEdit.text.toString()
         editText.visibility = View.GONE
-        binding.apply {
-            nicknameText.text = nicknameEdit.text.toString()
-            nicknameEdit.visibility = View.GONE
-            doneButton.visibility = View.GONE
-            nicknameText.visibility = View.VISIBLE
-        }
+        binding.nicknameText.text = binding.nicknameEdit.text
+        binding.nicknameEdit.visibility = View.GONE
+        binding.doneButton.visibility = View.GONE
+        binding.nicknameText.visibility = View.VISIBLE
         nicknameTextView.visibility = View.VISIBLE
 
     }
